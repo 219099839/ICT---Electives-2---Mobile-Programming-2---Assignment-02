@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -133,7 +134,7 @@ fun AlertDialog(
 
                 //Adding the person icon
                 Icon(
-                    imageVector = Icons.Filled.Person,
+                    imageVector = Icons.Filled.Info,
                     contentDescription = "",
                     tint = Color.White ,
                     modifier = Modifier
