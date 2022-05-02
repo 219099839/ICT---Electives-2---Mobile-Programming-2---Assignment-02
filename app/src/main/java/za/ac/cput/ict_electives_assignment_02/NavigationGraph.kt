@@ -5,9 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import za.ac.cput.ict_electives_assignment_02.MainContent
-import za.ac.cput.ict_electives_assignment_02.Navigation
-import za.ac.cput.ict_electives_assignment_02.StartJourneyButton
+import za.ac.cput.ict_electives_assignment_02.*
 
 
 @Composable
@@ -24,12 +22,12 @@ fun SetupNavGraph(
             za.ac.cput.ict_electives_assignment_02.AlertDialog()
             StartJourneyButton(navController = navController)
         }
-        composable(Navigation.Journey.route)
+        composable(Navigation.StartJourney.route)
         {
-            NameText()
-            CourseText()
-            DepartmentText()
-            StudentNumberText()
+            Name()
+            Course()
+            Department()
+            StudentNumber()
             CourseButton()
             BackButton(navController = navController)
         }

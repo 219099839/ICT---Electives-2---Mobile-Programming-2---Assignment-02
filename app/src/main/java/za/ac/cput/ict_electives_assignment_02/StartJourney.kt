@@ -32,17 +32,17 @@ class JourneyScreen : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            NameText()
-            CourseText()
-            DepartmentText()
-            StudentNumberText()
+            Name()
+            Course()
+            Department()
+            StudentNumber()
             CourseButton()
             BackButton(navController = rememberNavController())
         }
     }
 }
 @Composable
-fun NameText() {
+fun Name() {
 
     Text(
         // Setting the text
@@ -62,7 +62,7 @@ fun NameText() {
     )
 }
 @Composable
-fun CourseText() {
+fun Course() {
     Text(
         // Setting the text
         text = "Course: Applications Development",
@@ -83,7 +83,7 @@ fun CourseText() {
     )
 }
 @Composable
-fun DepartmentText() {
+fun Department() {
     Text(
         // Setting the text
         text = "Department: ICT: Information and " +
@@ -105,7 +105,7 @@ fun DepartmentText() {
     )
 }
 @Composable
-fun StudentNumberText() {
+fun StudentNumber() {
     Text(
         // Setting the text
         text = "Student Number: 219099839",
@@ -200,10 +200,10 @@ fun BackButton(navController: NavController){
 @Composable
 @Preview (showBackground = true)
 fun JourneyScreenPreview() {
-    NameText()
-    CourseText()
-    DepartmentText()
-    StudentNumberText()
+    Name()
+    Course()
+    Department()
+    StudentNumber()
     CourseButton()
     BackButton(navController = rememberNavController())
 }
