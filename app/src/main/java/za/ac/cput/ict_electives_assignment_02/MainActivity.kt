@@ -152,7 +152,7 @@ fun StartJourneyButton(navController: NavController){
     {
         Button(
             // Code to navigate to Start Journey Screen
-            onClick = {navController.navigate(route=Navigation.Journey.route)},
+            onClick = {navController.navigate(route= Navigation.Journey.route)},
             colors = ButtonDefaults.buttonColors(backgroundColor = Color(0xFFad5389)),
             shape = RoundedCornerShape(50.dp),
         )

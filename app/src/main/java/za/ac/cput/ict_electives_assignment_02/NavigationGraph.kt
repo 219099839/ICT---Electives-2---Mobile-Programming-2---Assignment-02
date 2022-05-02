@@ -6,6 +6,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import za.ac.cput.ict_electives_assignment_02.MainContent
+import za.ac.cput.ict_electives_assignment_02.Navigation
 import za.ac.cput.ict_electives_assignment_02.StartJourneyButton
 
 

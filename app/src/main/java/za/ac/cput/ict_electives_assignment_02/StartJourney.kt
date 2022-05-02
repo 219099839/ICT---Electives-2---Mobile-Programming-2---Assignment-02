@@ -1,4 +1,4 @@
-package za.ac.cput.ict_electives_assignment_02.ui.theme
+package za.ac.cput.ict_electives_assignment_02
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
