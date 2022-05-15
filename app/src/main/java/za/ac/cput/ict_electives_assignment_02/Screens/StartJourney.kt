@@ -1,4 +1,4 @@
-package za.ac.cput.ict_electives_assignment_02
+package za.ac.cput.ict_electives_assignment_02.Screens
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -26,7 +26,10 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 import androidx.navigation.compose.rememberNavController
+import za.ac.cput.ict_electives_assignment_02.Navigation.Navigation
+import za.ac.cput.ict_electives_assignment_02.Screens.BackButton as BackButton1
 
+//Nawaaz Amien 219099839//
 
 class JourneyScreen : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,8 +39,8 @@ class JourneyScreen : ComponentActivity() {
             Course()
             Department()
             StudentNumber()
-            CourseButton()
-            BackButton(navController = rememberNavController())
+            CourseButton(navController = rememberNavController())
+            BackButton1(navController = rememberNavController())
         }
     }
 }
@@ -127,7 +130,7 @@ fun StudentNumber() {
         )
 }
 @Composable
-fun CourseButton(){
+fun CourseButton(navController: NavController){
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -140,7 +143,7 @@ fun CourseButton(){
     )
     {
         Button(
-            onClick = {},
+            onClick = {navController.navigate(route= Navigation.CourseModules.route)},
             colors = ButtonDefaults.buttonColors(
                 //Using custom color
                 backgroundColor = Color(0xFFad5389)),
@@ -163,7 +166,7 @@ fun CourseButton(){
 
 // Adding a back button to take you back to the welcome screen
 @Composable
-fun BackButton(navController: NavController){
+fun BackButton1(navController: NavController){
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -204,6 +207,6 @@ fun JourneyScreenPreview() {
     Course()
     Department()
     StudentNumber()
-    CourseButton()
-    BackButton(navController = rememberNavController())
+    CourseButton(navController = rememberNavController())
+    BackButton1(navController = rememberNavController())
 }

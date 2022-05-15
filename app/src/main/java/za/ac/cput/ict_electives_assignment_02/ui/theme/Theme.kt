@@ -42,3 +42,19 @@ fun ICTElectivesAssignment02Theme(darkTheme: Boolean = isSystemInDarkTheme(), co
             content = content
     )
 }
+
+@Composable
+fun ScrollsTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() () -> Unit) {
+    val colors = if (darkTheme) {
+        DarkColorPalette
+    } else {
+        LightColorPalette
+    }
+
+    MaterialTheme(
+        colors = colors,
+        typography = Typography,
+        shapes = Shapes,
+        content = content
+    )
+}

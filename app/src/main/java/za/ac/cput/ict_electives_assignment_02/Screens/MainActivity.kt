@@ -1,4 +1,4 @@
-package za.ac.cput.ict_electives_assignment_02
+package za.ac.cput.ict_electives_assignment_02.Screens
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -26,7 +26,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import za.ac.cput.ict_electives_assignment_02.Navigation.Navigation
 import za.ac.cput.ict_electives_assignment_02.ui.theme.*
+
+//Nawaaz Amien 219099839//
 
 class MainActivity : ComponentActivity() {
 
